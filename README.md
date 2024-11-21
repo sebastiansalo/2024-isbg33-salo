@@ -1,1 +1,3 @@
-# isgb-33-salo
+# isgb33 nosql
+
+repo for isgb33
