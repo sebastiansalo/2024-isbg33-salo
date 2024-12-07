@@ -6,6 +6,10 @@ public class Main {
         GUI gui = new GUI();
         Communications comms = new Communications();
         new Controller(gui, comms);
+        
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+        	comms.close(); // stäng anslutningen
+        	}));
 
         gui.setVisible(true);
     }
